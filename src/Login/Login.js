@@ -1,12 +1,12 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import Button from '../Button/Button'
+import LoginButton from '../Button/LoginButton'
 
 export default class Login extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Button buttonName='Login'/>
+        <LoginButton buttonTitle={'Login'}/>
       </View>
     );
   }
