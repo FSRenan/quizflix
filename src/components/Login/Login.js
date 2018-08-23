@@ -1,14 +1,15 @@
 import React from 'react';
 import { StyleSheet, ImageBackground, View } from 'react-native';
 import LoginButton from '../Button/LoginButton'
+import backgroundNetflix from '../../images/fundoTelaLogin.png'
 
 export default class Login extends React.Component {
   render() {
-    return (
-        <ImageBackground style={styles.container} source={require('../../images/fundoTelaLogin.png')}>
-          <LoginButton  buttonTitle={'Login'}/>
-        </ImageBackground>
 
+    return (
+        <ImageBackground style={styles.container} source={backgroundNetflix}>
+          <LoginButton buttonTitle='Login' />
+        </ImageBackground>
     );
   }
 }
@@ -19,5 +20,4 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-
 });
