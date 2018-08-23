@@ -4,11 +4,12 @@ import LoginButton from '../Button/LoginButton'
 
 export default class Login extends React.Component {
   render() {
-    return (
-        <ImageBackground style={styles.container} source={require('../../images/fundoTelaLogin.png')}>
-          <LoginButton  buttonTitle={'Login'}/>
-        </ImageBackground>
+    const backgroundNetflix = require('../../images/fundoTelaLogin.png');
 
+    return (
+        <ImageBackground style={styles.container} source={backgroundNetflix}>
+          <LoginButton buttonTitle='Login'/>
+        </ImageBackground>
     );
   }
 }
@@ -19,5 +20,4 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-
 });
