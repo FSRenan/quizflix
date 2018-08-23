@@ -4,7 +4,7 @@ import { StyleSheet, Button } from 'react-native';
 
 export default class LoginButton extends React.Component {  
 
-  static propTypes = { buttonTitle: React.PropTypes.string.isRequired };
+  static teste = LoginButton.propTypes = { buttonTitle: PropTypes.string.isRequired };
 
   render() {
     const {buttonTitle} = this.props;

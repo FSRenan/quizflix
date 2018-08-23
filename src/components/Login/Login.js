@@ -8,7 +8,7 @@ export default class Login extends React.Component {
 
     return (
         <ImageBackground style={styles.container} source={backgroundNetflix}>
-          <LoginButton buttonTitle='Login'/>
+          <LoginButton buttonTitle='Login' />
         </ImageBackground>
     );
   }
