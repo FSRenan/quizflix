@@ -1,12 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { StyleSheet, Button } from 'react-native';
-import PropTypes from 'prop-types'
 
 export default class LoginButton extends React.Component {  
 
-  LoginButton.propTypes = {
-    buttonTitle: PropTypes.string.isRequired,
-  }
+  static propTypes = { buttonTitle: React.PropTypes.string.isRequired };
 
   render() {
     const {buttonTitle} = this.props;
@@ -25,7 +23,7 @@ export default class LoginButton extends React.Component {
 const styles = StyleSheet.create({
   buttonLogin: {
     width: '300px',
-    borderRadius: '5px',
+    borderRadius: 5,
   },
 });
 
