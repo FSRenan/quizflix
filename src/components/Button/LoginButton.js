@@ -5,7 +5,7 @@ import PropTypes from 'prop-types'
 export default class LoginButton extends React.Component {  
 
   LoginButton.propTypes = {
-    buttonTitle: PropTypes.string.isRequired;
+    buttonTitle: PropTypes.string.isRequired,
   }
 
   render() {
@@ -24,7 +24,7 @@ export default class LoginButton extends React.Component {
 
 const styles = StyleSheet.create({
   buttonLogin: {
-    widht: '300px',
+    width: '300px',
     borderRadius: '5px',
   },
 });

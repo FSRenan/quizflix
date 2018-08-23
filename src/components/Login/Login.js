@@ -1,10 +1,10 @@
 import React from 'react';
 import { StyleSheet, ImageBackground, View } from 'react-native';
 import LoginButton from '../Button/LoginButton'
+import backgroundNetflix from '../../images/fundoTelaLogin.png'
 
 export default class Login extends React.Component {
   render() {
-    const backgroundNetflix = require('../../images/fundoTelaLogin.png');
 
     return (
         <ImageBackground style={styles.container} source={backgroundNetflix}>
