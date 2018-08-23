@@ -11,12 +11,13 @@ export default class LoginButton extends React.Component {
         //onPress={onPressLearnMore}
         title={buttonTitle}
         color="#0000FF"
-        accessibilityLabel="Learn more about this purple button"
       />
     );
   }
   
 }
+
+
 
 
   

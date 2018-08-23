@@ -1,14 +1,14 @@
 import React from 'react';
-import { StyleSheet, Image, View } from 'react-native';
+import { StyleSheet, ImageBackground, View } from 'react-native';
 import LoginButton from '../Button/LoginButton'
 
 export default class Login extends React.Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Image source={require('../../images/fundoTelaLogin.png')} />
-        <LoginButton  buttonTitle={'Login'}/>
-      </View>
+        <ImageBackground style={styles.container} source={require('../../images/fundoTelaLogin.png')}>
+          <LoginButton  buttonTitle={'Login'}/>
+        </ImageBackground>
+
     );
   }
 }
@@ -18,6 +18,13 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  image: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    height: '100%',
+    width: '100%', 
   },
 
 });
