@@ -4,7 +4,16 @@ import { StyleSheet, Button } from 'react-native';
 
 export default class LoginButton extends React.Component {  
 
-  static teste = LoginButton.propTypes = { buttonTitle: PropTypes.string.isRequired };
+  static propTypes = { 
+    buttonTitle: PropTypes.string.isRequired,
+    color: PropTypes.string,
+  };
+
+  static defaultProps = {
+    color: '#CCC',
+  }
+
+  defaultPro
 
   render() {
     const {buttonTitle} = this.props;
@@ -14,7 +23,7 @@ export default class LoginButton extends React.Component {
         //onPress={onPressLearnMore}
         styles={styles.buttonLogin}
         title={buttonTitle}
-        color="#0000FF" 
+        color={color}
       />
     );
   }
