@@ -8,22 +8,16 @@ export default class LoginButton extends React.Component {
     
     return (
       <Button
-        style={styles.Button}
         //onPress={onPressLearnMore}
         title={buttonTitle}
-        color="#841584"
+        color="#0000FF"
         accessibilityLabel="Learn more about this purple button"
       />
     );
   }
+  
 }
 
-const styles = StyleSheet.create({
-  Button: {
-    backgroundColor: '#4136bB',
-    color: '#FFFFFF',
-    //fontSize: '18px',
-    width: '332px',
-  },
+
   
-});
+
