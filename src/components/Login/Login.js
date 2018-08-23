@@ -1,13 +1,15 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, ImageBackground, View } from 'react-native';
 import LoginButton from '../Button/LoginButton'
+import backgroundNetflix from '../../images/fundoTelaLogin.png'
 
 export default class Login extends React.Component {
   render() {
+
     return (
-      <View style={styles.container}>
-        <LoginButton buttonTitle={'Login'}/>
-      </View>
+        <ImageBackground style={styles.container} source={backgroundNetflix}>
+          <LoginButton buttonTitle='Login' color='#4136B5'/>
+        </ImageBackground>
     );
   }
 }
@@ -15,9 +17,7 @@ export default class Login extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#FFF',
     alignItems: 'center',
     justifyContent: 'center',
   },
-
 });
