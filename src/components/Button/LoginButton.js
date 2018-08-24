@@ -1,27 +1,26 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { StyleSheet, Button } from 'react-native';
+import React from "react";
+import PropTypes from "prop-types";
+import { StyleSheet, Button } from "react-native";
 
-export default class LoginButton extends React.Component {  
-
-  static propTypes = { 
+export default class LoginButton extends React.Component {
+  static propTypes = {
     buttonTitle: PropTypes.string.isRequired,
-    color: PropTypes.string,
+    color: PropTypes.string
   };
 
   static defaultProps = {
-    color: '#CCC',
-  }
+    color: "#CCC"
+  };
 
-  defaultPro
+  defaultPro;
 
   render() {
-    const {buttonTitle} = this.props;
-    const {color} = this.props;
-    
+    const { buttonTitle } = this.props;
+    const { color } = this.props;
+
     return (
       <Button
-        //onPress={onPressLearnMore}
+        onPress={() => {}}
         styles={styles.buttonLogin}
         title={buttonTitle}
         color={color}
@@ -32,12 +31,7 @@ export default class LoginButton extends React.Component {
 
 const styles = StyleSheet.create({
   buttonLogin: {
-    width: '300px',
-    borderRadius: 5,
-  },
+    width: "300px",
+    borderRadius: 5
+  }
 });
-
-
-
-  
-
