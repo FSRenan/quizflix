@@ -1,6 +1,5 @@
 import React from "react";
 import { StyleSheet, ImageBackground, View } from "react-native";
-import LoginButton from "../Button/LoginButton";
 import { Button } from "react-native-elements";
 import backgroundNetflix from "../../images/fundoTelaLogin.png";
 
