@@ -17,6 +17,7 @@ export default class LoginButton extends React.Component {
 
   render() {
     const {buttonTitle} = this.props;
+    const {color} = this.props;
     
     return (
       <Button
