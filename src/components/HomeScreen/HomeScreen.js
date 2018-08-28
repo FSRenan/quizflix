@@ -20,10 +20,6 @@ export default class HomeScreen extends React.Component {
 }
 
 const styles = StyleSheet.create({
-  buttonLogin: {
-    width: "300px",
-    borderRadius: 5
-  },
   backgroundWrapper: {
     backgroundColor: "#9D50BB",
     height: "100%"
