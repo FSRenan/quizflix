@@ -1,13 +1,12 @@
 import React from "react";
 import { View } from "react-native";
-import Login from "./src/components/Login/Login";
-import Screen2 from "./src/components/Screen2/Screen2";
+import LoginScreen from "./src/components/LoginScreen/LoginScreen";
 
 export default class App extends React.Component {
   render() {
     return (
       <View>
-        <Screen2 />
+        <LoginScreen />
       </View>
     );
   }

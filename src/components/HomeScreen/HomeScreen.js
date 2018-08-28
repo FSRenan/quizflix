@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { StyleSheet, View, Text } from "react-native";
 import { Button } from "react-native-elements";
 
-export default class Screen2 extends React.Component {
+export default class HomeScreen extends React.Component {
   render() {
     return (
       <View style={styles.backgroundWrapper}>
