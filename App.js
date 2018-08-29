@@ -5,9 +5,7 @@ import LoginScreen from "./src/components/LoginScreen/LoginScreen";
 export default class App extends React.Component {
   render() {
     return (
-      <View>
         <LoginScreen />
-      </View>
     );
   }
 }

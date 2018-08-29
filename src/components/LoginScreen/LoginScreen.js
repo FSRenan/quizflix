@@ -1,8 +1,9 @@
 import React from "react";
-import { StyleSheet, ImageBackground, View } from "react-native";
+import { StyleSheet, ImageBackground, Text,View } from "react-native";
 import { Button } from "react-native-elements";
 import backgroundNetflix from "../../images/fundoTelaLogin.png";
 import * as firebase from "firebase";
+import { Font } from 'expo';
 
 const config = {
   apiKey: "AIzaSyAA9yiDCHy4-lb_tmGiQ2LSiHdrcuM3fOM",
@@ -24,11 +25,25 @@ firebase.auth().onAuthStateChanged(user => {
 });
 
 export default class LoginScreen extends React.Component {
+
+  state = {
+    fontLoaded: false,
+  }
+
+  componentBeforeMount() {
+    Font.loadAsync({
+      'open-sans-bold': require('../../assets/NetflixFont.ttf'),
+    });
+    this.setState({ fontLoaded: true });
+  } 
+
+
   async loginWithFacebook() {
     const { type, token } = await Expo.Facebook.logInWithReadPermissionsAsync(
       "1684751348317950",
       { permissions: ["public_profile"] }
     );
+    
 
     if (type === "success") {
       // Build Firebase credential with the Facebook access token.
@@ -39,7 +54,7 @@ export default class LoginScreen extends React.Component {
         .auth()
         .signInWithCredential(credential)
         .catch(error => {
-          // Handle Errors here.
+          console.log(error)
         });
     }
   }
@@ -47,14 +62,20 @@ export default class LoginScreen extends React.Component {
   render() {
     return (
       <ImageBackground source={backgroundNetflix} style={styles.container}>
-        <View styles={styles.rows}>
-          <Button
-            title="Logar com facebook"
-            onPress={() => this.loginWithFacebook()}
-            titleStyle={styles.buttonTitle}
-            buttonStyle={styles.buttonFacebook}
-          />
-        </View>
+
+      {  this.state.fontLoaded ? (
+      <Text style={{ fontFamily: 'open-sans-bold', fontSize: 56 }}>
+        Quizflix
+      </Text>
+      ) : null}
+    
+
+      <Button
+        title="Logar com facebook"
+        onPress={() => this.loginWithFacebook()}
+        titleStyle={styles.buttonTitle}
+        buttonStyle={styles.buttonFacebook}
+      />
       </ImageBackground>
     );
   }
@@ -62,12 +83,16 @@ export default class LoginScreen extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    height: "100%"
-  },
-  rows: {
     flex: 1,
     justifyContent: "center",
-    alignItems: "center"
+    alignItems: "flex-end",
+    flexDirection: 'row',
+  },
+  rows: {
+  
+  },
+  title: {
+    fontFamily: "open-sans-bold"
   },
   buttonFacebook: {
     backgroundColor: "rgba(92, 99,216, 1)",
@@ -75,7 +100,8 @@ const styles = StyleSheet.create({
     height: 45,
     borderColor: "transparent",
     borderWidth: 0,
-    borderRadius: 8
+    borderRadius: 8,
+    marginBottom: 80,
   },
   buttonTitle: {
     fontWeight: "700"
