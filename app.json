@@ -1,5 +1,14 @@
 {
   "expo": {
-    "sdkVersion": "27.0.0"
+   "name": "QuizFlix",
+   "version": "1.0.0",
+   "slug": "quizflix",
+   "sdkVersion": "27.0.0",
+   "ios": {
+     "bundleIdentifier": "com.reVit.quizflix"
+   },
+   "android": {
+     "package": "com.reVit.quizflix"
+   }
   }
 }
