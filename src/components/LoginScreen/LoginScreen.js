@@ -1,26 +1,4 @@
 import React from "react";
-<<<<<<< HEAD
-import { StyleSheet, ImageBackground, Text,View } from "react-native";
-import { Button } from "react-native-elements";
-import backgroundNetflix from "../../images/fundoTelaLogin.png";
-import LoginFacebook from "./LoginFacebook"
-
-
-
-export default class LoginScreen extends React.Component {
-
-  render() {
-    return (
-      <ImageBackground source={backgroundNetflix} style={styles.container}>
-      <Button
-        title="Logar com facebook"
-        onPress={() => LoginFacebook.loginWithFacebook()}
-        titleStyle={styles.buttonTitle}
-        buttonStyle={styles.buttonFacebook}
-      />
-      </ImageBackground>
-    );
-=======
 import { StyleSheet, ImageBackground, Text ,View } from "react-native";
 import { Button } from "react-native-elements";
 import backgroundNetflix from "../../images/fundoTelaLogin.png";
@@ -95,7 +73,6 @@ export default class LoginScreen extends React.Component {
       </ImageBackground>
     );
     }
->>>>>>> master
   }
 }
 
@@ -104,15 +81,6 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "flex-end",
-<<<<<<< HEAD
-    flexDirection: 'row',
-  },
-  rows: {
-  
-  },
-  title: {
-    fontFamily: "open-sans-bold"
-=======
     flexDirection: "row",
   },
   title: {
@@ -122,7 +90,6 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     paddingBottom: 200,
     letterSpacing: 1,
->>>>>>> master
   },
   buttonFacebook: {
     backgroundColor: "rgba(92, 99,216, 1)",
@@ -131,18 +98,11 @@ const styles = StyleSheet.create({
     borderColor: "transparent",
     borderWidth: 0,
     borderRadius: 8,
-<<<<<<< HEAD
-    marginBottom: 80,
-  },
-  buttonTitle: {
-    fontWeight: "700"
-=======
     marginBottom: 80, 
     fontSize: 48   
   },
   buttonTitle: {
     fontWeight: "700",
     fontSize: 48
->>>>>>> master
   }
 });
