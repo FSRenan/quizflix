@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { StyleSheet, View, Text } from "react-native";
 import { Button } from "react-native-elements";
 import * as firebase from 'firebase'
+<<<<<<< HEAD
 import FirebaseConfig from '../constants/FirebaseConfig'
 
 
@@ -36,5 +37,16 @@ export default class LoginFacebook extends React.Component {
             });
         }
       }
+=======
+
+ 
+
+
+
+
+export default class LoginFacebook extends React.Component {
+  
+   
+>>>>>>> master
 }
 
