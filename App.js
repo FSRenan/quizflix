@@ -1,12 +1,11 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import Login from './src/components/Login/Login'
+import React from "react";
+import { View } from "react-native";
+import LoginScreen from "./src/components/LoginScreen/LoginScreen";
 
 export default class App extends React.Component {
   render() {
     return (
-      <Login />
+        <LoginScreen />
     );
   }
 }
-
