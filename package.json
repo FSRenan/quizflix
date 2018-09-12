@@ -1,7 +1,7 @@
 {
-  "name": "github.com/fsrenan/quizflix@feature/login-with-facebook",
+  "name": "organizacao-fb",
   "version": "0.0.0",
-  "description": "FSRenan/quizflix @ Aug 30, 2018",
+  "description": "FSRenan/quizflix @ Sep 4, 2018",
   "author": null,
   "private": true,
   "main": "node_modules/expo/AppEntry.js",
@@ -11,7 +11,10 @@
     "react-native": "https://github.com/expo/react-native/archive/sdk-27.0.0.tar.gz",
     "firebase": "^5.4.1",
     "prop-types": "15.6.2",
+    "react-dom": ">=15.3.0",
+    "react-md-spinner": "0.3.0",
     "react-native-elements": "^0.19.1",
+    "react-native-loading-spinner-overlay": "0.5.2",
     "react-test-renderer": "16.4.2"
   }
 }
